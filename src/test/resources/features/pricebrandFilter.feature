@@ -1,17 +1,11 @@
-@filterByPrice
-Feature: Validating price by filter functionality
+@PriceBrandFilter
+ Feature: Validating price and brand by filter functionality
+ 
+  Scenario: Validate Nutrition products using Price and Brand filters
 
-Scenario Outline: Validating price by filter
-   Given user is home page
-	When clicks login
-	And  user enters email "priyankauser@gmail.com" and password "Priyanka@1"
-	Then user is sucessfully logged in
-	Given user is on search screen and in stock is checked
-	When  Range <range> is selected
-	Then price is validated
+    When User searches for "Nutrition"
+    And User applies the maximum price filter as "250"
+    Then User verifies all displayed products have price less than or equal to "250"
 
-Examples:
-|range|
-|"Below ₹60"|
-|"₹60 - ₹70"|
-|"Above ₹70"|
+    When User selects the brand "Decathlon"
+    Then User verifies all displayed products belong to brand "Decathlon"
