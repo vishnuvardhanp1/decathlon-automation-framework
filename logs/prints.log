@@ -1,2 +1,2 @@
-21:01:07.446 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-21:01:07.456 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
+20:18:24.359 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
+20:18:24.567 [main] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
