@@ -1,0 +1,6 @@
+21:57:11.097 [main] INFO  stepDefinitions.AddToCartStep - mrp 99
+21:57:16.190 [main] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
+21:57:21.304 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+21:57:26.664 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+21:57:40.915 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+21:57:40.936 [main] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
