@@ -79,13 +79,12 @@ public class SetupDriverHooks  extends Base {
 			
 		
 		@After
-		public void tearDown()
-		//Scenario scenario)
+		public void tearDown(Scenario scenario)
 		{
-			/*  if (!scenario.isFailed()) { byte[] screenshot = ((TakesScreenshot)
+			  if (!scenario.isFailed()) { byte[] screenshot = ((TakesScreenshot)
 			  getDriver()).getScreenshotAs(OutputType.BYTES);
 			  
-			 Allure.addAttachment( "Screenshot", new ByteArrayInputStream(screenshot) ); }*/
+			 Allure.addAttachment( "Screenshot", new ByteArrayInputStream(screenshot) ); }
 			 
 		    
 			getDriver().quit();

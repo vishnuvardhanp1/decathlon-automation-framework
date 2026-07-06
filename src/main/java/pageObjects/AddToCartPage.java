@@ -6,8 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class AddToCartPage {
 	WebDriver driver;
@@ -71,7 +70,7 @@ public class AddToCartPage {
 	public WebElement getSellingPrice() {
 		 return driver.findElement(this.sellingPrice);
 	}
-	public WebElement GetMRP() {
+	public WebElement getMRP() {
 		 return driver.findElement(this.mrp);
 	}
 	public WebElement getProduct() {
@@ -122,5 +121,17 @@ public class AddToCartPage {
 	}
 	public WebElement getQuantity() {
 		return this.driver.findElement(this.quantity);
+	}
+	
+	public int getPrice(String text) {
+	    return Integer.parseInt(text.replaceAll("[^0-9]", ""));
+	}
+	public int getCartTotalPriceValue() {
+	    return (int) Double.parseDouble(
+	        driver.findElement(cartTotalPrice)
+	              .getText()
+	              .replace("₹", "")
+	              .replace(",", "")
+	              .trim());
 	}
 }

@@ -110,19 +110,19 @@ public class AddToCartStep  extends Base {
 		                 .replace("₹", "")
 		                 .trim());
 				mrp=Integer.parseInt(
-					    addToCartPage.GetMRP().getText()
+					    addToCartPage.getMRP().getText()
 		                 .replace("MRP", "")
 		                 .replace("₹", "")
 		                 .trim());
 				logger.info("sellingPrice " + sellingPrice);
 				logger.info("mrp " + mrp);
-				//addToCartPage.getProductName().click();
-				//addToCartPage.getAddToCart().click();
+				
 				addToCartPage.getProductName().click();
 				Thread.sleep(5000);
 			}
 		}catch(Exception ex)
 		{
+			ex.printStackTrace();
 			System.out.println(ex.getMessage());
 		logger.debug("Exception occurred:"+ex.getMessage());
 		
@@ -134,43 +134,17 @@ public class AddToCartStep  extends Base {
 	public void user_clicks_add_to_cart_button() {
 	    // Write code here that turns the phrase above into concrete actions
 		logger.info("User adds the product to the cart");
-		//WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+		
 		try {
 		 	
 			addToCartPage=new AddToCartPage(getDriver());
 			addToCartPage.getAddToCart().click();
 			
 			
-	/*		for(int i=0;i<Integer.parseInt(quantity);i++) {
-				 Thread.sleep(2000);
-				 System.out.println("Before Click : " + addToCartPage.getCartCount());
-				 WebElement button = addToCartPage.getAddToCart(productName);
-
-				    System.out.println("Before Click : " + addToCartPage.getCartCount());
-
-				    System.out.println("Clicking " + (i + 1));
-
-				    ((JavascriptExecutor) getDriver()).executeScript(
-				            "arguments[0].click();", button);
-
-				    Thread.sleep(2000);
-
-				    System.out.println("After Click : " + addToCartPage.getCartCount());
-
-				    System.out.println("Button Text : " + button.getText());
-				    System.out.println("Enabled : " + button.isEnabled());
-				    //addToCartPage.getAddToCart().click();
-
-				    
-				wait.until(ExpectedConditions.visibilityOfElementLocated(addToCartPage.getProductAddedToast()));
-				wait.until(ExpectedConditions.invisibilityOfElementLocated(addToCartPage.getProductAddedToast()));
-			}*/
+	
 			
 			Thread.sleep(5000);
-		/*	addToCartPage.getColor().click();
-			//addToCartPage.getPincode().sendKeys("641020");
-			addToCartPage.getAddToCart().click();
-			Thread.sleep(5000);*/
+		
 		}catch(Exception ex)
 		{
 			ex.printStackTrace();
@@ -201,14 +175,14 @@ public class AddToCartStep  extends Base {
 		logger.info("Validate correct item is added");
 		try {
 			addToCartPage=new AddToCartPage(getDriver());
-			
-			quantity=string;
+			int intialQuantity=Integer.parseInt(addToCartPage.getQuantity().getText());
+			//String qty=string;
 		 	int IncQty=Integer.parseInt(string);
 		 	for(int i=0;i<IncQty;i++) {
 		 		addToCartPage.getIncreaseQuantity().click();
 		 		Thread.sleep(3000);
 		 	}
-		 	IncQty=IncQty+1;
+		 	IncQty=IncQty+intialQuantity;
 		 	quantity=String.valueOf(IncQty);
 		 	
 			Thread.sleep(5000);
@@ -240,6 +214,39 @@ public class AddToCartStep  extends Base {
 		}
 	}
 	
+	@Then("Validate selling price,discount,mrp")
+	public void validate_selling_price_discount_mrp() {
+		logger.info("Validate correct item is added");
+		try {
+		int qty=Integer.parseInt(quantity);
+		int totalSellingPrice=qty*sellingPrice;
+		int totalPrice=qty*mrp;
+		int discount=totalPrice - totalSellingPrice;
+		
+		logger.info("totalSellingPrice : " + totalSellingPrice);
+	    logger.info("totalPrice : " + totalPrice);
+	    logger.info("discount : " + discount);
+	  
+	    
+	    logger.info("totalSellingPrice : " + addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()));
+	    logger.info("totalPrice : " + addToCartPage.getPrice(addToCartPage.getCartTotalPrice().getText()));
+	    logger.info("discount : " + addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()));
+
+	    Assert.assertEquals(addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()), totalSellingPrice);
+	    Assert.assertEquals(addToCartPage.getCartTotalPriceValue(), totalPrice);
+	    Assert.assertEquals(addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()), discount);
+	    
+
+	   
+		Thread.sleep(5000);
+		}catch(Exception ex)
+		{
+			 ex.printStackTrace();
+			System.out.println(ex.getMessage());
+		logger.debug("Exception occurred:"+ex.getMessage());
+		
+		}
+	}
 	/*@Then("Validate correct quantity is added")
 	public void validate_correct_quantity_is_added() {
 	    // Write code here that turns the phrase above into concrete actions

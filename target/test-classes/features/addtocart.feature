@@ -11,3 +11,4 @@ When User clicks Add to Cart button in product details page
 Then User clicks on view cart icon
 When User increases quantity to "3"
 Then Validate correct quantity is added  
+Then Validate selling price,discount,mrp 
