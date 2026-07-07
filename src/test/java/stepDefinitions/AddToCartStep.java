@@ -32,15 +32,15 @@ public class AddToCartStep  extends Base {
 	public void user_searches_for(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		try {
-		 	Thread.sleep(5000);
+		 	//Thread.sleep(5000);
 		 	getDriver().get(this.getFrameworkUrl());
-		 	getDriver().manage().window().maximize();
-		    Thread.sleep(5000);
+		 	//getDriver().manage().window().maximize();
+		   // Thread.sleep(5000);
 		    if(addToCartPage == null){
 		        addToCartPage = new AddToCartPage(getDriver());
 		    }
 		    addToCartPage.getSearchBar().sendKeys(string, Keys.ENTER);
-		    Thread.sleep(5000);
+		   // Thread.sleep(5000);
 
 	        logger.info("Title : " + getDriver().getTitle());
 	        logger.info("URL : " + getDriver().getCurrentUrl());
@@ -64,7 +64,7 @@ public class AddToCartStep  extends Base {
 		    WebElement maxSlider=addToCartPage.getSlider();
 		  
 		    WebElement maxPrice=addToCartPage.getMaxPrice();
-		    Thread.sleep(5000);
+		   // Thread.sleep(5000);
 		    Actions actions = new Actions(getDriver());
 
 	        while (true) {
@@ -84,7 +84,7 @@ public class AddToCartStep  extends Base {
 	                   .moveByOffset(-40, 0)
 	                   .release()
 	                   .perform();
-	            Thread.sleep(50);
+	          //  Thread.sleep(50);
 	        }
 	        	 Thread.sleep(5000);
 	        logger.info("Title : " + getDriver().getTitle());

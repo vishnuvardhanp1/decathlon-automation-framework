@@ -28,8 +28,8 @@ import java.net.URL;
 
 
 public class SetupDriverHooks  extends Base {
-	//RemoteWebDriver remoteDriver;
-		WebDriver driver;
+	RemoteWebDriver remoteDriver;
+	//	WebDriver driver;
 		@Before
 		public void setup()
 		{
@@ -39,35 +39,39 @@ public class SetupDriverHooks  extends Base {
 					
 					System.out.println("java -jar src/test/resources/selenium-server-4.44.0.jar standalone");
 					if (browser.equals("chrome")) {
-				       driver = new ChromeDriver();  
+				       //driver = new ChromeDriver();  
 						//System.out.println("***REACHED IF");
 						
-					/*	  ChromeOptions options = new ChromeOptions();
+						  ChromeOptions options = new ChromeOptions();
 						 options.setCapability("platformName", "Windows");
 						 
 						  remoteDriver = new RemoteWebDriver( new URL("http://localhost:4444"),options
 						  
-						 );*/
+						 );
 						 
 				    }
 					else if( browser.equals("edge"))
 					{
-						driver = new EdgeDriver();  
+					//	driver = new EdgeDriver();  
 						//grid setup
-					/*	 EdgeOptions options = new EdgeOptions();
+						 EdgeOptions options = new EdgeOptions();
 						 options.setCapability("platformName", "Windows");
 	
 					 remoteDriver = new RemoteWebDriver(
 		                    new URL("http://localhost:4444"),options
 			                    
-		            );*/
+		            );
 						 
 					}
-					setDriver(driver);
-					//setDriver(remoteDriver);
+					//setDriver(driver);
+					setDriver(remoteDriver);
+
+			        getDriver().manage().window().maximize();
+
 				System.out.println("GRID STARTED");
-				/*	getDriver().manage().timeouts().
-			        implicitlyWait(Duration.ofSeconds(10));*/
+			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		        getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		        getDriver().manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 
 				} catch (Exception e) {
 					// TODO Auto-generated catch block

@@ -32,13 +32,13 @@ public class PriceBrandFilterStep extends Base{
 	public void user_searches_for(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		try {
-		 	Thread.sleep(5000);
+		 	//Thread.sleep(5000);
 		 	getDriver().get(this.getFrameworkUrl());
-		 	getDriver().manage().window().maximize();
-		    Thread.sleep(5000);
+		 	//getDriver().manage().window().maximize();
+		   // Thread.sleep(5000);
 		    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
 		    priceBrandFilterPage.getSearchBar().sendKeys(string, Keys.ENTER);
-		    Thread.sleep(5000);
+		    //Thread.sleep(5000);
 
 	        logger.info("Title : " + getDriver().getTitle());
 	        logger.info("URL : " + getDriver().getCurrentUrl());
@@ -60,7 +60,7 @@ public class PriceBrandFilterStep extends Base{
 		    WebElement maxSlider=priceBrandFilterPage.getSlider();
 		  
 		    WebElement maxPrice=priceBrandFilterPage.getPrice();
-		    Thread.sleep(5000);
+		   // Thread.sleep(5000);
 		    Actions actions = new Actions(getDriver());
 
 	        while (true) {
@@ -80,7 +80,7 @@ public class PriceBrandFilterStep extends Base{
 	                   .moveByOffset(-40, 0)
 	                   .release()
 	                   .perform();
-	            Thread.sleep(50);
+	           // Thread.sleep(50);
 	        }
 	        	 Thread.sleep(5000);
 	        logger.info("Title : " + getDriver().getTitle());
@@ -132,10 +132,10 @@ public class PriceBrandFilterStep extends Base{
 		    //priceBrandFilterPage.scrollToBrand(getDriver());
 		   
 		    priceBrandFilterPage.getBrandsMenu().click();
-		    Thread.sleep(5000);
+		    //Thread.sleep(5000);
 		    
 		    priceBrandFilterPage.getBrandSelected(string).click();
-		    Thread.sleep(5000);
+		   // Thread.sleep(5000);
 		} catch(Exception ex)
 		{
 			

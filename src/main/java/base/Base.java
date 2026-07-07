@@ -12,15 +12,15 @@ public class Base {
 		System.out.println(base.getFrameworkUrl());
 		System.out.println(base.getBrowser());
 	}
-  // private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	private static WebDriver driver;
+  private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	//private static WebDriver driver;
     public static WebDriver getDriver() {
-    	return driver;
-      //  return driver.get();
+    	//return driver;
+        return driver.get();
     }
     public static void setDriver(WebDriver driver1) {
-    	    driver=driver1;
-        //driver.set(driver1);
+    	  //  driver=driver1;
+       driver.set(driver1);
     }	
 	public String getUrl() throws Exception
 	{

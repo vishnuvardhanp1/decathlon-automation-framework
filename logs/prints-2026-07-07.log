@@ -1,7 +1,6 @@
-13:13:51.798 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
-13:13:51.800 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
-13:13:52.240 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
-13:13:52.241 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
-13:13:52.661 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹231
-13:13:52.661 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 231
-13:13:57.681 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+16:29:25.818 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
+16:29:30.835 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
+16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalPrice : 396
+16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - discount : 120
+16:29:30.862 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
