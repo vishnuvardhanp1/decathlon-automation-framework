@@ -1,6 +1,5 @@
-16:29:25.818 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
-16:29:30.835 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
-16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalPrice : 396
-16:29:30.836 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - discount : 120
-16:29:30.862 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
+18:50:04.284 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
+18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
+18:50:04.330 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276

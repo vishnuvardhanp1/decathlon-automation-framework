@@ -1,2 +1,2 @@
-16:29:30.888 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalPrice : 39600
-16:29:30.914 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - discount : 120
+18:50:04.346 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396
+18:50:04.368 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Discount : 120

@@ -124,7 +124,8 @@ public class AddToCartStep  extends Base {
 				logger.info("mrp " + mrp);
 				
 				addToCartPage.getProductName().click();
-				Thread.sleep(5000);
+				 WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+				    wait.until(ExpectedConditions.visibilityOf(addToCartPage.getAddToCart()));
 			}
 		}catch(Exception ex)
 		{
@@ -151,7 +152,11 @@ public class AddToCartStep  extends Base {
 			
 	
 			
-			Thread.sleep(5000);
+			
+			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(
+			addToCartPage.getProductAddedToast()));
 		
 		}catch(Exception ex)
 		{
@@ -171,8 +176,14 @@ public class AddToCartStep  extends Base {
 			if(addToCartPage == null){
 			    addToCartPage = new AddToCartPage(getDriver());
 			}
+			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(
+			        addToCartPage.getProductAddedToast()));
+
 			addToCartPage.getCartIcon().click();
 			Thread.sleep(5000);
+           
 		}catch(Exception ex)
 		{
 			logger.error("Exception occurred", ex);
@@ -184,23 +195,34 @@ public class AddToCartStep  extends Base {
 	@And("User increases the quantity to {string}")
 	public void user_increases_the_quantity_to(String string) {
 		logger.info("Validate correct item is added");
+
 		try {
-			if(addToCartPage == null){
-			    addToCartPage = new AddToCartPage(getDriver());
-			}
-			int initialQuantity=Integer.parseInt(addToCartPage.getQuantity().getText());
-			//String qty=string;
-		 	int IncQty=Integer.parseInt(string);
-		 	for(int i=0;i<IncQty;i++) {
-		 		addToCartPage.getIncreaseQuantity().click();
-		 		Thread.sleep(3000);
-		 	}
-		 	IncQty=IncQty+initialQuantity;
-		 	quantity=String.valueOf(IncQty);
-		 	
-			Thread.sleep(5000);
-		}catch(Exception ex)
-		{
+
+		    if (addToCartPage == null) {
+		        addToCartPage = new AddToCartPage(getDriver());
+		    }
+
+		    int initialQuantity = Integer.parseInt(addToCartPage.getQuantity().getText());
+		    int incQty = Integer.parseInt(string);
+
+		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
+		    for (int i = 0; i < incQty; i++) {
+
+		        int expectedQuantity = initialQuantity + i + 1;
+
+		        addToCartPage.getIncreaseQuantity().click();
+
+		        wait.until(ExpectedConditions.textToBePresentInElement(
+		                addToCartPage.getQuantity(),
+		                String.valueOf(expectedQuantity)));
+		    }
+
+		    quantity = String.valueOf(initialQuantity + incQty);
+		    Thread.sleep(5000);
+
+		} catch (Exception ex) {
+		
 			logger.error("Exception occurred", ex);
 			Assert.fail(ex.getMessage());
 		
@@ -214,7 +236,13 @@ public class AddToCartStep  extends Base {
 			if(addToCartPage == null){
 			    addToCartPage = new AddToCartPage(getDriver());
 			}
-			
+
+		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
+		    wait.until(ExpectedConditions.textToBePresentInElement(
+		            addToCartPage.getQuantity(),
+		            quantity));
+
 			
 		 	int actualCount=Integer.parseInt(addToCartPage.getQuantity().getText());
 		 	logger.info("Expected Cart Count : " + quantity);
@@ -232,36 +260,56 @@ public class AddToCartStep  extends Base {
 	@And("The cart should display the correct selling price, MRP, discount and total price")
 	public void validate_selling_price_discount_mrp() {
 		logger.info("Validate correct item is added");
+
 		try {
-		int qty=Integer.parseInt(quantity);
-		int totalSellingPrice=qty*sellingPrice;
-		int totalPrice=qty*mrp;
-		int discount=totalPrice - totalSellingPrice;
+
+		    int qty = Integer.parseInt(quantity);
+
+		    int totalSellingPrice = qty * sellingPrice;
+		    int totalPrice = qty * mrp;
+		    int discount = totalPrice - totalSellingPrice;
+
+		    logger.info("Expected Selling Price : {}", totalSellingPrice);
+		    logger.info("Expected Total Price : {}", totalPrice);
+		    logger.info("Expected Discount : {}", discount);
+
+		    if (addToCartPage == null) {
+		        addToCartPage = new AddToCartPage(getDriver());
+		    }
+
+		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+
+		    // Wait until cart total is updated
+		    wait.until(ExpectedConditions.textToBePresentInElement(
+		            addToCartPage.getCartTotalPrice(),
+		            String.valueOf(totalPrice)));
+
+		    logger.info("Actual Selling Price : {}",
+		            addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()));
+
+		    logger.info("Actual Total Price : {}",
+		            addToCartPage.getCartTotalPriceValue());
+
+		    logger.info("Actual Discount : {}",
+		            addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()));
+
+		    Assert.assertEquals(
+		            addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()),
+		            totalSellingPrice);
+
+		    Assert.assertEquals(
+		            addToCartPage.getCartTotalPriceValue(),
+		            totalPrice);
+
+		    Assert.assertEquals(
+		            addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()),
+		            discount);
+
+		} catch (Exception ex) {
+
+		    logger.error("Exception occurred", ex);
+		    Assert.fail(ex.getMessage());
 		
-		logger.info("totalSellingPrice : " + totalSellingPrice);
-	    logger.info("totalPrice : " + totalPrice);
-	    logger.info("discount : " + discount);
-	    if(addToCartPage == null){
-	        addToCartPage = new AddToCartPage(getDriver());
-	    }
-	    
-	    logger.info("totalSellingPrice : " + addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()));
-	    logger.info("totalPrice : " + addToCartPage.getPrice(addToCartPage.getCartTotalPrice().getText()));
-	    logger.info("discount : " + addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()));
-
-	    Assert.assertEquals(addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()), totalSellingPrice);
-	    Assert.assertEquals(addToCartPage.getCartTotalPriceValue(), totalPrice);
-	    Assert.assertEquals(addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()), discount);
-	    
-
-	   
-		Thread.sleep(5000);
-		}catch(Exception ex)
-		{
-			 ex.printStackTrace();
-			
-			logger.error("Exception occurred", ex);
-			Assert.fail(ex.getMessage());
 		
 		}
 	}
