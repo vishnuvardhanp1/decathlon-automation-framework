@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import base.Base;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,7 +36,9 @@ public class AddToCartStep  extends Base {
 		 	getDriver().get(this.getFrameworkUrl());
 		 	getDriver().manage().window().maximize();
 		    Thread.sleep(5000);
-		    addToCartPage = new AddToCartPage(getDriver());
+		    if(addToCartPage == null){
+		        addToCartPage = new AddToCartPage(getDriver());
+		    }
 		    addToCartPage.getSearchBar().sendKeys(string, Keys.ENTER);
 		    Thread.sleep(5000);
 
@@ -44,17 +47,19 @@ public class AddToCartStep  extends Base {
 	}
 	catch(Exception ex)
 	{
-		System.out.println(ex.getMessage());
-	logger.debug("Exception occurred:"+ex.getMessage());
+		logger.error("Exception occurred", ex);
+		Assert.fail(ex.getMessage());
 	}
 	}
-	@When("User selects the maximum price filter less than {string}")
+	@And("User selects the maximum price filter less than {string}")
 	public void user_selects_the_maximum_price_filter_less_than(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User applies the maximum price filter as {string}");
+		logger.info("User applies the maximum price filter as {}", string);
 		try {
 		 	
-			addToCartPage=new AddToCartPage(getDriver());
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
 		    
 		    WebElement maxSlider=addToCartPage.getSlider();
 		  
@@ -87,18 +92,19 @@ public class AddToCartStep  extends Base {
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		}
 	}
-	@When("User clicks the product {string}")
+	@And("User clicks the product {string}")
 	public void user_clicks_the_product(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		logger.info("User selects the product" + string);
 		try {
 		 	
-			addToCartPage=new AddToCartPage(getDriver());
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
 			WebElement product=addToCartPage.getProductName();
 			productName = product.getText()
                     .replace("DECATHLON", "")
@@ -123,21 +129,23 @@ public class AddToCartStep  extends Base {
 		}catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		
 		}
 	}
 	
 	
-	@When("User clicks Add to Cart button in product details page")
+	@And("User clicks Add to Cart button")
 	public void user_clicks_add_to_cart_button() {
 	    // Write code here that turns the phrase above into concrete actions
 		logger.info("User adds the product to the cart");
 		
 		try {
 		 	
-			addToCartPage=new AddToCartPage(getDriver());
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
 			addToCartPage.getAddToCart().click();
 			
 			
@@ -148,73 +156,80 @@ public class AddToCartStep  extends Base {
 		}catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}
-	@Then("User clicks on view cart icon")
-	public void validate_correct_item_is_added() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("Validate correct item is added");
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-			addToCartPage.getCartIcon().click();
-			Thread.sleep(5000);
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		
 		}
 	}
 	
-	@When("User increases quantity to {string}")
-	public void user_increases_quantity_to(String string) {
+	@And("User navigates to the cart")
+	public void user_navigates_to_the_cart() {
+	    // Write code here that turns the phrase above into concrete actions
 		logger.info("Validate correct item is added");
 		try {
-			addToCartPage=new AddToCartPage(getDriver());
-			int intialQuantity=Integer.parseInt(addToCartPage.getQuantity().getText());
+		 	
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
+			addToCartPage.getCartIcon().click();
+			Thread.sleep(5000);
+		}catch(Exception ex)
+		{
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
+		
+		}
+	}
+	
+	@And("User increases the quantity to {string}")
+	public void user_increases_the_quantity_to(String string) {
+		logger.info("Validate correct item is added");
+		try {
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
+			int initialQuantity=Integer.parseInt(addToCartPage.getQuantity().getText());
 			//String qty=string;
 		 	int IncQty=Integer.parseInt(string);
 		 	for(int i=0;i<IncQty;i++) {
 		 		addToCartPage.getIncreaseQuantity().click();
 		 		Thread.sleep(3000);
 		 	}
-		 	IncQty=IncQty+intialQuantity;
+		 	IncQty=IncQty+initialQuantity;
 		 	quantity=String.valueOf(IncQty);
 		 	
 			Thread.sleep(5000);
 		}catch(Exception ex)
 		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		
 		}
 	}
 	
-	@Then("Validate correct quantity is added")
-	public void validate_correct_quantity_added() {
+	@Then("The cart should display correct quantity")
+	public void the_cart_should_display_correct_quantity() {
 		logger.info("Validate correct item is added");
 		try {
-			addToCartPage=new AddToCartPage(getDriver());
+			if(addToCartPage == null){
+			    addToCartPage = new AddToCartPage(getDriver());
+			}
 			
 			
 		 	int actualCount=Integer.parseInt(addToCartPage.getQuantity().getText());
 		 	logger.info("Expected Cart Count : " + quantity);
 		    logger.info("Actual Cart Count : " + actualCount);
-		 	Assert.assertTrue(quantity.equals(String.valueOf(actualCount)));
+		    Assert.assertEquals(actualCount, Integer.parseInt(quantity));
 			Thread.sleep(5000);
 		}catch(Exception ex)
 		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		
 		}
 	}
 	
-	@Then("Validate selling price,discount,mrp")
+	@And("The cart should display the correct selling price, MRP, discount and total price")
 	public void validate_selling_price_discount_mrp() {
 		logger.info("Validate correct item is added");
 		try {
@@ -226,7 +241,9 @@ public class AddToCartStep  extends Base {
 		logger.info("totalSellingPrice : " + totalSellingPrice);
 	    logger.info("totalPrice : " + totalPrice);
 	    logger.info("discount : " + discount);
-	  
+	    if(addToCartPage == null){
+	        addToCartPage = new AddToCartPage(getDriver());
+	    }
 	    
 	    logger.info("totalSellingPrice : " + addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()));
 	    logger.info("totalPrice : " + addToCartPage.getPrice(addToCartPage.getCartTotalPrice().getText()));
@@ -242,103 +259,11 @@ public class AddToCartStep  extends Base {
 		}catch(Exception ex)
 		{
 			 ex.printStackTrace();
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}
-	/*@Then("Validate correct quantity is added")
-	public void validate_correct_quantity_is_added() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("Validate correct quantity is added");
-		try {
-			Thread.sleep(5000);
-			addToCartPage=new AddToCartPage(getDriver());
 			
-		   int actualCount = addToCartPage.getCartCountBadge();
-		   addToCartPage.getCartIcon().click();
-			 logger.info("Expected Cart Count : " + quantity);
-			    logger.info("Actual Cart Count : " + actualCount);
-			    Assert.assertTrue(quantity.equals(actualCount));
-
-			    logger.info("Expected Cart Count : " + quantity);
-			    logger.info("Actual Cart Count : " + actualCount);
-			    Thread.sleep(5000);
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}*/
-/*	@When("User increases the product quantity to {string}")
-	public void user_increases_the_product_quantity_to(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User increases the product quantity to " + string);
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
+			logger.error("Exception occurred", ex);
+			Assert.fail(ex.getMessage());
 		
 		}
 	}
-	@Then("User verifies the cart selling price is equal to product selling price multiplied by quantity")
-	public void user_verifies_the_cart_selling_price_is_equal_to_product_selling_price_multiplied_by_quantity() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User verifies the cart selling price is equal to product selling price multiplied by quantity");
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}
-	@Then("User verifies the cart MRP is equal to product MRP multiplied by quantity")
-	public void user_verifies_the_cart_mrp_is_equal_to_product_mrp_multiplied_by_quantity() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User verifies the cart MRP is equal to product MRP multiplied by quantity");
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}
-	@Then("User verifies the cart discount is displayed correctly")
-	public void user_verifies_the_cart_discount_is_displayed_correctly() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User verifies the cart discount is displayed correctly");
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}
-	@Then("User verifies the cart total is equal to cart MRP minus discount")
-	public void user_verifies_the_cart_total_is_equal_to_cart_mrp_minus_discount() {
-	    // Write code here that turns the phrase above into concrete actions
-		logger.info("User verifies the cart total is equal to cart MRP minus discount");
-		try {
-		 	
-			addToCartPage=new AddToCartPage(getDriver());
-		}catch(Exception ex)
-		{
-			System.out.println(ex.getMessage());
-		logger.debug("Exception occurred:"+ex.getMessage());
-		
-		}
-	}*/
+	
 }

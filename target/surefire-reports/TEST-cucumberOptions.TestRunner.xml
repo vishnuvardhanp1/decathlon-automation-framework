@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="113.944" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="118.601" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire17046711319328327098\surefirebooter-20260706184524817_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire17046711319328327098 2026-07-06T18-45-24_711-jvmRun1 surefire-20260706184524817_1tmp surefire_0-20260706184524817_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire4259752506577998356\surefirebooter-20260707131209704_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire4259752506577998356 2026-07-07T13-12-09_502-jvmRun1 surefire-20260707131209704_1tmp surefire_0-20260707131209704_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\test-classes;C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\classes;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire17046711319328327098\surefirebooter-20260706184524817_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire4259752506577998356\surefirebooter-20260707131209704_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -58,92 +58,92 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Validate adding a Nutrition product to the cart and verify pricing&quot;, &quot;Validating Add to Cart functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="71.992">
+  <testcase name="runScenario[&quot;Validate Add to Cart functionality and pricing for a Nutrition product&quot;, &quot;Validate Add to Cart functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="74.282">
     <system-out><![CDATA[
 @AddToCart
-Scenario: Validate adding a Nutrition product to the cart and verify pricing                        &amp#27;[90m# src/test/resources/features/addtocart.feature:4&amp#27;[0m
+Scenario: Validate Add to Cart functionality and pricing for a Nutrition product                    &amp#27;[90m# src/test/resources/features/addtocart.feature:4&amp#27;[0m
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 GRID STARTED
-18:45:44.424 [main] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-18:45:44.432 [main] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition
+13:12:32.164 [main] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
+13:12:32.173 [main] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m&amp#27;[32m category&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.AddToCartStep.user_searches_for(java.lang.String)&amp#27;[0m
-18:45:44.446 [main] INFO  stepDefinitions.AddToCartStep - User applies the maximum price filter as {string}
-18:45:49.492 [main] INFO  stepDefinitions.AddToCartStep - ₹3,499
-18:45:49.492 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 3499
-18:45:49.899 [main] INFO  stepDefinitions.AddToCartStep - ₹2,878
-18:45:49.899 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 2878
-18:45:50.348 [main] INFO  stepDefinitions.AddToCartStep - ₹2,261
-18:45:50.350 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 2261
-18:45:50.762 [main] INFO  stepDefinitions.AddToCartStep - ₹1,630
-18:45:50.763 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 1630
-18:45:51.189 [main] INFO  stepDefinitions.AddToCartStep - ₹1,014
-18:45:51.190 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 1014
-18:45:51.627 [main] INFO  stepDefinitions.AddToCartStep - ₹398
-18:45:51.628 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 398
-18:45:52.042 [main] INFO  stepDefinitions.AddToCartStep - ₹231
-18:45:52.042 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 231
-18:45:57.057 [main] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-18:45:57.062 [main] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
+13:12:32.179 [main] INFO  stepDefinitions.AddToCartStep - User applies the maximum price filter as 250
+13:12:37.228 [main] INFO  stepDefinitions.AddToCartStep - ₹3,499
+13:12:37.230 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 3499
+13:12:37.648 [main] INFO  stepDefinitions.AddToCartStep - ₹2,878
+13:12:37.648 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 2878
+13:12:38.045 [main] INFO  stepDefinitions.AddToCartStep - ₹2,261
+13:12:38.045 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 2261
+13:12:38.487 [main] INFO  stepDefinitions.AddToCartStep - ₹1,630
+13:12:38.490 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 1630
+13:12:38.902 [main] INFO  stepDefinitions.AddToCartStep - ₹1,014
+13:12:38.904 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 1014
+13:12:39.343 [main] INFO  stepDefinitions.AddToCartStep - ₹398
+13:12:39.343 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 398
+13:12:39.768 [main] INFO  stepDefinitions.AddToCartStep - ₹231
+13:12:39.768 [main] INFO  stepDefinitions.AddToCartStep - Current Price : 231
+13:12:44.785 [main] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
+13:12:44.790 [main] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser selects the maximum price filter less than &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(java.lang.String)&amp#27;[0m
-18:45:57.064 [main] INFO  stepDefinitions.AddToCartStep - User selects the productGranola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-18:45:57.086 [main] INFO  stepDefinitions.AddToCartStep - productName Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-18:45:57.120 [main] INFO  stepDefinitions.AddToCartStep - sellingPrice 69
-18:45:57.122 [main] INFO  stepDefinitions.AddToCartStep - mrp 99
+13:12:44.791 [main] INFO  stepDefinitions.AddToCartStep - User selects the productGranola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
+13:12:44.817 [main] INFO  stepDefinitions.AddToCartStep - productName Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
+13:12:44.852 [main] INFO  stepDefinitions.AddToCartStep - sellingPrice 69
+13:12:44.854 [main] INFO  stepDefinitions.AddToCartStep - mrp 99
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks the product &amp#27;[0m&amp#27;[32m&amp#27;[1m"Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar"&amp#27;[0m &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_the_product(java.lang.String)&amp#27;[0m
-18:46:02.205 [main] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser clicks Add to Cart button in product details page&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
-18:46:07.298 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser clicks on view cart icon&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.validate_correct_item_is_added()&amp#27;[0m
-18:46:12.942 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser increases quantity to &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m                                                               &amp#27;[90m# stepDefinitions.AddToCartStep.user_increases_quantity_to(java.lang.String)&amp#27;[0m
-18:46:27.175 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-18:46:27.195 [main] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
-18:46:27.195 [main] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate correct quantity is added&amp#27;[0m                                                           &amp#27;[90m# stepDefinitions.AddToCartStep.validate_correct_quantity_added()&amp#27;[0m
-18:46:32.206 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-18:46:32.206 [main] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
-18:46:32.206 [main] INFO  stepDefinitions.AddToCartStep - totalPrice : 396
-18:46:32.207 [main] INFO  stepDefinitions.AddToCartStep - discount : 120
-18:46:32.228 [main] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
-18:46:32.247 [main] INFO  stepDefinitions.AddToCartStep - totalPrice : 39600
-18:46:32.271 [main] INFO  stepDefinitions.AddToCartStep - discount : 120
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate selling price,discount,mrp&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.AddToCartStep.validate_selling_price_discount_mrp()&amp#27;[0m
+13:12:49.929 [main] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Add to Cart button&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
+13:12:55.016 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser navigates to the cart&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.AddToCartStep.user_navigates_to_the_cart()&amp#27;[0m
+13:13:00.619 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser increases the quantity to &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.AddToCartStep.user_increases_the_quantity_to(java.lang.String)&amp#27;[0m
+13:13:14.855 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+13:13:14.872 [main] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
+13:13:14.874 [main] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe cart should display correct quantity&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.AddToCartStep.the_cart_should_display_correct_quantity()&amp#27;[0m
+13:13:19.886 [main] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+13:13:19.886 [main] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
+13:13:19.886 [main] INFO  stepDefinitions.AddToCartStep - totalPrice : 396
+13:13:19.887 [main] INFO  stepDefinitions.AddToCartStep - discount : 120
+13:13:19.907 [main] INFO  stepDefinitions.AddToCartStep - totalSellingPrice : 276
+13:13:19.923 [main] INFO  stepDefinitions.AddToCartStep - totalPrice : 39600
+13:13:19.944 [main] INFO  stepDefinitions.AddToCartStep - discount : 120
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe cart should display the correct selling price, MRP, discount and total price&amp#27;[0m              &amp#27;[90m# stepDefinitions.AddToCartStep.validate_selling_price_discount_mrp()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jul 06, 2026 6:45:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 07, 2026 1:12:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 06, 2026 6:45:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Jul 07, 2026 1:12:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 149.0.7827.198. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](2)" classname="cucumberOptions.TestRunner" time="41.277">
+  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](2)" classname="cucumberOptions.TestRunner" time="43.235">
     <system-out><![CDATA[
 @PriceBrandFilter
 Scenario: Validate Nutrition products using Price and Brand filters                &amp#27;[90m# src/test/resources/features/pricebrandFilter.feature:4&amp#27;[0m
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 GRID STARTED
-18:46:55.671 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-18:46:55.675 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
+13:13:45.027 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+13:13:45.034 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m                                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_searches_for(java.lang.String)&amp#27;[0m
-18:46:55.676 [main] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
-18:47:00.711 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹3,499
-18:47:00.712 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 3499
-18:47:01.105 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,878
-18:47:01.105 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2878
-18:47:01.516 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,261
-18:47:01.517 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2261
-18:47:01.944 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,630
-18:47:01.944 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1630
-18:47:02.337 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
-18:47:02.337 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
-18:47:02.780 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
-18:47:02.780 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
-18:47:03.175 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹231
-18:47:03.177 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 231
-18:47:08.186 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-18:47:08.191 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
+13:13:45.035 [main] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
+13:13:50.065 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹3,499
+13:13:50.065 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 3499
+13:13:50.488 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,878
+13:13:50.488 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2878
+13:13:50.928 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,261
+13:13:50.929 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2261
+13:13:51.382 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,630
+13:13:51.382 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1630
+13:13:51.798 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
+13:13:51.800 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
+13:13:52.240 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
+13:13:52.241 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
+13:13:52.661 [main] INFO  stepDefinitions.PriceBrandFilterStep - ₹231
+13:13:52.661 [main] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 231
+13:13:57.681 [main] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+13:13:57.687 [main] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser applies the maximum price filter as &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_applies_the_maximum_price_filter_as(java.lang.String)&amp#27;[0m
 User verifies all displayed products have price less than or equal to {string}
 Price : ₹69
@@ -167,14 +167,14 @@ Price : ₹69
 Price : ₹69
 Price : ₹89
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products have price less than or equal to &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_have_price_less_than_or_equal_to(java.lang.String)&amp#27;[0m
-18:47:08.341 [main] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
+13:13:57.938 [main] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser selects the brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_selects_the_brand(java.lang.String)&amp#27;[0m
 User verifies all displayed products belong to brand {string}
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products belong to brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m            &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_belong_to_brand(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Jul 06, 2026 6:46:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 07, 2026 1:13:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 149
-Jul 06, 2026 6:46:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+Jul 07, 2026 1:13:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 149.0.7827.198. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

@@ -16,18 +16,14 @@ public class AddToCartPage {
 	By maxPrice=By.xpath("//input[@data-test-id='filter-sidebar-desktop:max-price-input']");
 	By productName = By.xpath("//a[@data-test-id='product-card-link' and contains(.,'Granola Bar Cashew Berry "
 			+ "- Healthy Nutrition Energy & Breakfast Bar')]//div[@data-test-id='product-card:product-card:title']");
-	By sellingPrice = By.xpath("//a[@data-test-id='product-card-link'"
-			+ " and contains(.,'Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar')]"
-			+ "//div[@data-test-id='product-card-product-card:selling-price']");
-	By mrp = By.xpath("//a[@data-test-id='product-card-link' "
-			+ "   and contains(.,'Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar')]"
-			+ "//div[@data-test-id='product-card-product-card:mrp']");
+	
+	By sellingPrice = By.xpath("//div[@data-test-id='product-card-product-card:selling-price']");
+	By mrp = By.xpath("//div[@data-test-id='product-card-product-card:mrp']");
 	By firstProduct =By.xpath("//a[@data-test-id='product-card-link' and contains(@aria-label,'Granola Bar Cashew Berry')]");
 	
-	By firstColor = By.xpath("(//img[@data-test-id='pdp-color-selector-desktop:option-image'])[1]");
-	By pincode = By.xpath("//span[@data-test-id='pdp-delivery-options-desktop:pincode-value']");
+	
 	By addToCartButton = By.xpath("//button[@data-test-id='pdp:add-to-cart-button']");
-	By addToCartButtonPLP = By.xpath("//button[@data-test-id='add-to-cart-button']");
+	
 	By cartCountBadge = By.xpath("//span[@data-test-id='header-desktop:cart-count-badge']");
 	
 	By cartIcon = By.xpath("//span[@data-test-id='header-desktop-cart:text']");
@@ -82,18 +78,10 @@ public class AddToCartPage {
 		return this.driver.findElement(this.productName);
 	}
 	
-	public WebElement getColor() {
-		return this.driver.findElement(this.firstColor);
-	}
-	public WebElement getPincode() {
-		return this.driver.findElement(this.pincode);
-	}
+
 	public WebElement getAddToCart() {
 
-	  /*  By addToCart = By.xpath(
-	        "//a[@data-test-id='product-card-link' and contains(.,\"" + productName + "\")]//button[@data-test-id='add-to-cart-button']");
-
-	    return driver.findElement(addToCart);*/
+	  
 		return this.driver.findElement(this.addToCartButton);
 	}
 	public int getCartCountBadge() {
