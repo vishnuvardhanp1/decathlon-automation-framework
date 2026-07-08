@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="46.042" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="26.035" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire12241381548479610027\surefirebooter-20260707184918386_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire12241381548479610027 2026-07-07T18-49-18_233-jvmRun1 surefire-20260707184918386_1tmp surefire_0-20260707184918386_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire696849191823471327\surefirebooter-20260708071612194_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire696849191823471327 2026-07-08T07-16-12_010-jvmRun1 surefire-20260708071612194_1tmp surefire_0-20260708071612194_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\test-classes;C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\classes;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire12241381548479610027\surefirebooter-20260707184918386_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire696849191823471327\surefirebooter-20260708071612194_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -61,62 +61,142 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="16.336">
+  <testcase name="runScenario[&quot;Validate Add to Cart functionality and pricing for a Nutrition product&quot;, &quot;Validate Add to Cart functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="17.488">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-test-id=&apos;filter-sidebar-desktop:slider-thumb-max-outer&apos;]&quot;}&#10;  (Session info: chrome=149.0.7827.198)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception&#10;Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [368dd282ef4f9b8623e3f5c2940d8fa5, findElement {using=xpath, value=//div[@data-test-id=&apos;filter-sidebar-desktop:slider-thumb-max-outer&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53635}, goog:processID: 145972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 368dd282ef4f9b8623e3f5c2940d8fa5" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']"}
+  (Session info: chrome=149.0.7827.198)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [368dd282ef4f9b8623e3f5c2940d8fa5, findElement {using=xpath, value=//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53635}, goog:processID: 145972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 368dd282ef4f9b8623e3f5c2940d8fa5
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(AddToCartStep.java:96)
+	at ✽.User selects the maximum price filter less than "250"(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/addtocart.feature:7)
+]]></failure>
     <system-out><![CDATA[
-@PriceBrandFilter
-Scenario: Validate Nutrition products using Price and Brand filters                &amp#27;[90m# src/test/resources/features/pricebrandFilter.feature:4&amp#27;[0m
-
 @AddToCart
 Scenario: Validate Add to Cart functionality and pricing for a Nutrition product                    &amp#27;[90m# src/test/resources/features/addtocart.feature:4&amp#27;[0m
+
+@PriceBrandFilter
+Scenario: Validate Nutrition products using Price and Brand filters                &amp#27;[90m# src/test/resources/features/pricebrandFilter.feature:4&amp#27;[0m
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 GRID STARTED
 GRID STARTED
-18:49:25.626 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-18:49:25.795 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition
+07:16:19.732 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Buy Sporting Goods, Sportswear and Equipments | Download App
+07:16:19.762 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m&amp#27;[32m category&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.AddToCartStep.user_searches_for(java.lang.String)&amp#27;[0m
-18:49:25.803 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User applies the maximum price filter as 250
-18:49:25.991 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹3,499
-18:49:25.991 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 3499
-18:49:26.195 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-18:49:26.358 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
+07:16:19.785 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User applies the maximum price filter as 250
+07:16:24.564 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+07:16:24.576 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m                                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_searches_for(java.lang.String)&amp#27;[0m
-18:49:26.359 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
-18:49:26.485 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹3,499
-18:49:26.486 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 3499
-18:49:26.548 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹2,878
-18:49:26.552 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 2878
-18:49:26.885 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,878
-18:49:26.885 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2878
-18:49:26.909 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹2,261
-18:49:26.911 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 2261
-18:49:27.267 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,261
-18:49:27.269 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2261
-18:49:27.282 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹1,630
-18:49:27.282 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 1630
-18:49:27.633 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,630
-18:49:27.634 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1630
-18:49:27.645 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹1,014
-18:49:27.649 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 1014
-18:49:27.998 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
-18:49:27.998 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
-18:49:28.021 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹398
-18:49:28.022 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 398
-18:49:28.397 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
-18:49:28.399 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
-18:49:28.430 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹231
-18:49:28.431 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 231
-18:49:28.764 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹231
-18:49:28.765 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 231
-18:49:33.444 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-18:49:33.456 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser selects the maximum price filter less than &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(java.lang.String)&amp#27;[0m
-18:49:33.457 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User selects the productGranola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-18:49:33.493 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - productName Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-18:49:33.553 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - sellingPrice 69
-18:49:33.556 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - mrp 99
-18:49:33.791 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-18:49:33.803 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
+07:16:24.577 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
+07:16:24.628 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹3,499
+07:16:24.632 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 3499
+07:16:25.055 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,878
+07:16:25.055 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2878
+07:16:25.487 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,261
+07:16:25.487 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2261
+07:16:25.900 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,630
+07:16:25.902 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1630
+07:16:26.345 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
+07:16:26.345 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
+07:16:26.767 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
+07:16:26.768 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
+07:16:27.203 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - ₹231
+07:16:27.207 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 231
+07:16:29.811 [TestNG-PoolService-0] ERROR stepDefinitions.AddToCartStep - Exception occurred
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']"}
+  (Session info: chrome=149.0.7827.198)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [368dd282ef4f9b8623e3f5c2940d8fa5, findElement {using=xpath, value=//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53635}, goog:processID: 145972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 368dd282ef4f9b8623e3f5c2940d8fa5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at pageObjects.AddToCartPage.getSlider(AddToCartPage.java:60)
+	at stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(AddToCartStep.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mUser selects the maximum price filter less than &amp#27;[0m&amp#27;[31m&amp#27;[1m"250"&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']"}
+  (Session info: chrome=149.0.7827.198)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [368dd282ef4f9b8623e3f5c2940d8fa5, findElement {using=xpath, value=//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53635}, goog:processID: 145972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 368dd282ef4f9b8623e3f5c2940d8fa5
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(AddToCartStep.java:96)
+	at ✽.User selects the maximum price filter less than "250"(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/addtocart.feature:7)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks the product &amp#27;[0m&amp#27;[36m&amp#27;[1m"Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar"&amp#27;[0m &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_the_product(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks Add to Cart button&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser navigates to the cart&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.AddToCartStep.user_navigates_to_the_cart()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser increases the quantity to &amp#27;[0m&amp#27;[36m&amp#27;[1m"3"&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.AddToCartStep.user_increases_the_quantity_to(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe cart should display correct quantity&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.AddToCartStep.the_cart_should_display_correct_quantity()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe cart should display the correct selling price, MRP, discount and total price&amp#27;[0m              &amp#27;[90m# stepDefinitions.AddToCartStep.validate_selling_price_discount_mrp()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jul 08, 2026 7:16:13 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](2)" classname="cucumberOptions.TestRunner" time="25.126">
+    <system-out><![CDATA[07:16:32.230 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+07:16:32.241 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-231
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser applies the maximum price filter as &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_applies_the_maximum_price_filter_as(java.lang.String)&amp#27;[0m
 User verifies all displayed products have price less than or equal to {string}
 Price : ₹69
@@ -140,58 +220,10 @@ Price : ₹69
 Price : ₹69
 Price : ₹89
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products have price less than or equal to &amp#27;[0m&amp#27;[32m&amp#27;[1m"250"&amp#27;[0m &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_have_price_less_than_or_equal_to(java.lang.String)&amp#27;[0m
-18:49:34.257 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks the product &amp#27;[0m&amp#27;[32m&amp#27;[1m"Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar"&amp#27;[0m &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_the_product(java.lang.String)&amp#27;[0m
-18:49:34.629 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
+07:16:32.615 [TestNG-PoolService-1] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser selects the brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_selects_the_brand(java.lang.String)&amp#27;[0m
 User verifies all displayed products belong to brand {string}
-stale element reference: stale element not found in the current frame
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [e906d838092b49fbcc82369c481d23bf, getElementText {id=f.5AFC6D89CED0143B34E228E5921AC9AE.d.53366F29B15E397B4964B562EF9D8523.e.4362}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56026}, goog:processID: 129792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[RemoteWebDriver: chrome on windows (e906d838092b49fbcc82369c481d23bf)] -> xpath: //span[@data-test-id='product-card:product-card:brand']]
-Session ID: e906d838092b49fbcc82369c481d23bf
-18:49:35.135 [TestNG-PoolService-1] DEBUG stepDefinitions.PriceBrandFilterStep - Exception occurred:stale element reference: stale element not found in the current frame
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [e906d838092b49fbcc82369c481d23bf, getElementText {id=f.5AFC6D89CED0143B34E228E5921AC9AE.d.53366F29B15E397B4964B562EF9D8523.e.4362}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56026}, goog:processID: 129792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.29.61:4444/ses..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[RemoteWebDriver: chrome on windows (e906d838092b49fbcc82369c481d23bf)] -> xpath: //span[@data-test-id='product-card:product-card:brand']]
-Session ID: e906d838092b49fbcc82369c481d23bf
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products belong to brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m            &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_belong_to_brand(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Add to Cart button&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
-18:49:35.845 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jul 07, 2026 6:49:19 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
-INFO: Using OpenTelemetry for tracing
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate Add to Cart functionality and pricing for a Nutrition product&quot;, &quot;Validate Add to Cart functionality&quot;](2)" classname="cucumberOptions.TestRunner" time="45.217">
-    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser navigates to the cart&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.AddToCartStep.user_navigates_to_the_cart()&amp#27;[0m
-18:49:53.941 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser increases the quantity to &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.AddToCartStep.user_increases_the_quantity_to(java.lang.String)&amp#27;[0m
-18:49:59.237 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-18:49:59.273 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
-18:49:59.274 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe cart should display correct quantity&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.AddToCartStep.the_cart_should_display_correct_quantity()&amp#27;[0m
-18:50:04.284 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
-18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
-18:50:04.288 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
-18:50:04.330 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276
-18:50:04.346 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396
-18:50:04.368 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Discount : 120
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe cart should display the correct selling price, MRP, discount and total price&amp#27;[0m              &amp#27;[90m# stepDefinitions.AddToCartStep.validate_selling_price_discount_mrp()&amp#27;[0m
 ]]></system-out>
   </testcase>
 </testsuite>

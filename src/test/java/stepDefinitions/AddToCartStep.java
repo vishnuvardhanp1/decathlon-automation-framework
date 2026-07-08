@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -32,7 +33,7 @@ public class AddToCartStep  extends Base {
 	public void user_searches_for(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		try {
-		 	//Thread.sleep(5000);
+		 	Thread.sleep(5000);
 		 	getDriver().get(this.getFrameworkUrl());
 		 	//getDriver().manage().window().maximize();
 		   // Thread.sleep(5000);
@@ -40,6 +41,12 @@ public class AddToCartStep  extends Base {
 		        addToCartPage = new AddToCartPage(getDriver());
 		    }
 		    addToCartPage.getSearchBar().sendKeys(string, Keys.ENTER);
+
+		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(
+		        By.xpath("//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']")));
+
 		   // Thread.sleep(5000);
 
 	        logger.info("Title : " + getDriver().getTitle());
@@ -84,7 +91,7 @@ public class AddToCartStep  extends Base {
 	                   .moveByOffset(-40, 0)
 	                   .release()
 	                   .perform();
-	          //  Thread.sleep(50);
+	           Thread.sleep(50);
 	        }
 	        	 Thread.sleep(5000);
 	        logger.info("Title : " + getDriver().getTitle());

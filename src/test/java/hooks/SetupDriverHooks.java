@@ -70,8 +70,8 @@ public class SetupDriverHooks  extends Base {
 
 				System.out.println("GRID STARTED");
 			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		        getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-		        getDriver().manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+		     /*   getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		        getDriver().manage().timeouts().scriptTimeout(Duration.ofSeconds(30));*/
 
 				} catch (Exception e) {
 					// TODO Auto-generated catch block

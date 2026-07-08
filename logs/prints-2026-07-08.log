@@ -1,0 +1,5 @@
+07:27:02.839 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+07:27:02.841 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
+07:27:02.842 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+07:27:02.842 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
+07:27:02.890 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276

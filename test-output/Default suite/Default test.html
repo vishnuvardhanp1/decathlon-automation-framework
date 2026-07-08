@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 07 15:43:38 IST 2026</td>
+<td>Started on:</td><td>Wed Jul 08 07:26:11 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5646 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51875 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,94 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate products using price range filter", "Validate Price Range Filter functionality"</td>
-<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e04ed9b1c1007674f6d1c3aa906e8985, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60796}, goog:processID: 24936, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60796/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e04ed9b1c1007674f6d1c3aa906e8985
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1254649194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1254649194'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e04ed9b1c1007674f6d1c3aa906e8985, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60796}, goog:processID: 24936, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60796/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e04ed9b1c1007674f6d1c3aa906e8985
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div></td>
-<td>2</td>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Nutrition products using Price and Brand filters", "Validating price and brand by filter functionality"</td>
+<td></td>
+<td>25</td>
 <td>cucumberOptions.TestRunner@57db2b13</td></tr>
 <tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate products using price range filter", "Validate Price Range Filter functionality"</td>
-<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eecd9732787c463b0d73852895c9a41d, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58172}, goog:processID: 18176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58172/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eecd9732787c463b0d73852895c9a41d
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace526981115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace526981115'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eecd9732787c463b0d73852895c9a41d, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58172}, goog:processID: 18176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58172/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eecd9732787c463b0d73852895c9a41d
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div></td>
-<td>1</td>
-<td>cucumberOptions.TestRunner@57db2b13</td></tr>
-<tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate products using price range filter", "Validate Price Range Filter functionality"</td>
-<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5727aa0e4f536db814b3fc76a121910b, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62969}, goog:processID: 15432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62969/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5727aa0e4f536db814b3fc76a121910b
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1650327539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1650327539'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}
-  (Session info: chrome=149.0.7827.198)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5727aa0e4f536db814b3fc76a121910b, findElement {using=xpath, value=//input[@type=&apos;search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.198, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62969}, goog:processID: 15432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62969/devtoo..., se:cdpVersion: 149.0.7827.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5727aa0e4f536db814b3fc76a121910b
-	at org.testng.Assert.fail(Assert.java:111)
-	at stepDefinitions.PriceRangeFilterStep.user_searches_for_type(PriceRangeFilterStep.java:41)
-	at ✽.User searches for &quot;Nutrition&quot; type(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/pricerangefilter.feature:6)
-</pre></div></td>
-<td>1</td>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add to Cart functionality and pricing for a Nutrition product", "Validate Add to Cart functionality"</td>
+<td></td>
+<td>51</td>
 <td>cucumberOptions.TestRunner@57db2b13</td></tr>
 </table><p>
 </body>

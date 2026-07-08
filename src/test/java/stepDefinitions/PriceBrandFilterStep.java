@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +10,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import base.Base;
@@ -35,10 +38,16 @@ public class PriceBrandFilterStep extends Base{
 		 	//Thread.sleep(5000);
 		 	getDriver().get(this.getFrameworkUrl());
 		 	//getDriver().manage().window().maximize();
-		   // Thread.sleep(5000);
-		    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+		    Thread.sleep(5000);
+		    if(priceBrandFilterPage == null){
+			    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+				}
 		    priceBrandFilterPage.getSearchBar().sendKeys(string, Keys.ENTER);
-		    //Thread.sleep(5000);
+
+		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(
+		        By.xpath("//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']")));
 
 	        logger.info("Title : " + getDriver().getTitle());
 	        logger.info("URL : " + getDriver().getCurrentUrl());
@@ -54,9 +63,9 @@ public class PriceBrandFilterStep extends Base{
 	    // Write code here that turns the phrase above into concrete actions
 		logger.info("User applies the maximum price filter as {string}");
 		try {
-		 	
+			if(priceBrandFilterPage == null){
 		    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
-		    
+			}
 		    WebElement maxSlider=priceBrandFilterPage.getSlider();
 		  
 		    WebElement maxPrice=priceBrandFilterPage.getPrice();
@@ -80,7 +89,7 @@ public class PriceBrandFilterStep extends Base{
 	                   .moveByOffset(-40, 0)
 	                   .release()
 	                   .perform();
-	           // Thread.sleep(50);
+	           Thread.sleep(50);
 	        }
 	        	 Thread.sleep(5000);
 	        logger.info("Title : " + getDriver().getTitle());
@@ -98,7 +107,9 @@ public class PriceBrandFilterStep extends Base{
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("User verifies all displayed products have price less than or equal to {string}");
 		try {
-			priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+			if(priceBrandFilterPage == null){
+			    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+				}
 			pricesList=priceBrandFilterPage.getPrices();
 			 int defaultPrice=Integer.parseInt(string);
 			 for (WebElement priceElement : pricesList) {
@@ -128,14 +139,16 @@ public class PriceBrandFilterStep extends Base{
 		logger.info("User selects the brand {string}");
 		try {
 		 	
-		    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+			if(priceBrandFilterPage == null){
+			    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+				}
 		    //priceBrandFilterPage.scrollToBrand(getDriver());
 		   
 		    priceBrandFilterPage.getBrandsMenu().click();
 		    //Thread.sleep(5000);
 		    
 		    priceBrandFilterPage.getBrandSelected(string).click();
-		   // Thread.sleep(5000);
+		    Thread.sleep(5000);
 		} catch(Exception ex)
 		{
 			
@@ -148,7 +161,9 @@ public class PriceBrandFilterStep extends Base{
 	public void user_verifies_all_displayed_products_belong_to_brand(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("User verifies all displayed products belong to brand {string}");
-		priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+		if(priceBrandFilterPage == null){
+		    priceBrandFilterPage=new PriceBrandFilterPage(getDriver());
+			}
 		brandsList=priceBrandFilterPage.getBrands();
 		try {
 			for (WebElement brand : brandsList) {
