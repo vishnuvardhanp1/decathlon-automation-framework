@@ -1,0 +1,5 @@
+14:41:29.597 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
+14:41:29.599 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+14:41:29.599 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
+14:41:29.648 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276
+14:41:29.667 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396
