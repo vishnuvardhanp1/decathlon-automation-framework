@@ -46,8 +46,7 @@ public class PriceBrandFilterStep extends Base{
 
 		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
 
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(
-		        By.xpath("//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']")));
+		    wait.until(ExpectedConditions.urlContains("search"));
 
 	        logger.info("Title : " + getDriver().getTitle());
 	        logger.info("URL : " + getDriver().getCurrentUrl());
@@ -117,7 +116,7 @@ public class PriceBrandFilterStep extends Base{
      		    String priceText = priceElement.getText();
 
      		    int price = Integer.parseInt(priceText.replaceAll("[^0-9]", ""));
-               
+               System.out.println(defaultPrice +  " : " + price);
      		    
      		    	Assert.assertTrue(price <= defaultPrice, "Price ₹" + price + " is greater than ₹" + defaultPrice);
      		        System.out.println("Price : ₹" + price);

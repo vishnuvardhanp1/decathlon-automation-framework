@@ -27,8 +27,8 @@ public class AddToCartStep  extends Base {
 	AddToCartPage addToCartPage;
 	String productName;
 	String quantity;
-	int sellingPrice;
-	int mrp;
+	int sellingPrice=0;;
+	int mrp=0;;
 	@When("User searches for {string} category")
 	public void user_searches_for(String string) {
 	    // Write code here that turns the phrase above into concrete actions
@@ -42,12 +42,10 @@ public class AddToCartStep  extends Base {
 		    }
 		    addToCartPage.getSearchBar().sendKeys(string, Keys.ENTER);
 
-		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+		   // WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
 
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(
-		        By.xpath("//div[@data-test-id='filter-sidebar-desktop:slider-thumb-max-outer']")));
-
-		   // Thread.sleep(5000);
+		   // wait.until(ExpectedConditions.urlContains("search"));
+		   //Thread.sleep(5000);
 
 	        logger.info("Title : " + getDriver().getTitle());
 	        logger.info("URL : " + getDriver().getCurrentUrl());
@@ -118,15 +116,7 @@ public class AddToCartStep  extends Base {
                     .trim();
 			logger.info("productName " + productName);
 			if(productName.equals(string)) {
-				sellingPrice=Integer.parseInt(
-					    addToCartPage.getSellingPrice().getText()
-		                 .replace("₹", "")
-		                 .trim());
-				mrp=Integer.parseInt(
-					    addToCartPage.getMRP().getText()
-		                 .replace("MRP", "")
-		                 .replace("₹", "")
-		                 .trim());
+				
 				logger.info("sellingPrice " + sellingPrice);
 				logger.info("mrp " + mrp);
 				
@@ -187,7 +177,15 @@ public class AddToCartStep  extends Base {
 
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(
 			        addToCartPage.getProductAddedToast()));
-
+			sellingPrice=Integer.parseInt(
+				    addToCartPage.getSellingPrice().getText()
+	                 .replace("₹", "")
+	                 .trim());
+			mrp=Integer.parseInt(
+				    addToCartPage.getMRP().getText()
+	                 .replace("MRP", "")
+	                 .replace("₹", "")
+	                 .trim());
 			addToCartPage.getCartIcon().click();
 			Thread.sleep(5000);
            
@@ -283,14 +281,27 @@ public class AddToCartStep  extends Base {
 		    if (addToCartPage == null) {
 		        addToCartPage = new AddToCartPage(getDriver());
 		    }
+		    logger.info(
+		    	    addToCartPage.getCartTotalPrice().getText()
+		    	);
+		    logger.info("Product Price : " + addToCartPage.getCartProductPrice().getText());
 
+		    logger.info("Discount : " + addToCartPage.getCartDiscount().getText());
+
+		    logger.info("Total Price : " + addToCartPage.getCartTotalPrice().getText());
+
+		    logger.info("Sub Total : " +
+		    	    getDriver().findElement(
+		    	        By.xpath("//div[@data-test-id='cart:cart-checkout-total-cart-value']/p")
+		    	    ).getText());
 		    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 
 		    // Wait until cart total is updated
 		    wait.until(ExpectedConditions.textToBePresentInElement(
 		            addToCartPage.getCartTotalPrice(),
 		            String.valueOf(totalPrice)));
-
+		    logger.info("Expected Total Price : " + totalPrice);
+		    logger.info("Actual UI Total : " + addToCartPage.getCartTotalPrice().getText());
 		    logger.info("Actual Selling Price : {}",
 		            addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()));
 
@@ -299,7 +310,7 @@ public class AddToCartStep  extends Base {
 
 		    logger.info("Actual Discount : {}",
 		            addToCartPage.getPrice(addToCartPage.getCartDiscount().getText()));
-
+		    logger.info("totalprice: " + totalPrice);
 		    Assert.assertEquals(
 		            addToCartPage.getPrice(addToCartPage.getCartProductPrice().getText()),
 		            totalSellingPrice);

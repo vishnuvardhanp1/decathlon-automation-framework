@@ -17,8 +17,8 @@ public class AddToCartPage {
 	By productName = By.xpath("//a[@data-test-id='product-card-link' and contains(.,'Granola Bar Cashew Berry "
 			+ "- Healthy Nutrition Energy & Breakfast Bar')]//div[@data-test-id='product-card:product-card:title']");
 	
-	By sellingPrice = By.xpath("//div[@data-test-id='product-card-product-card:selling-price']");
-	By mrp = By.xpath("//div[@data-test-id='product-card-product-card:mrp']");
+	By sellingPrice = By.xpath("//span[@data-test-id='pdp-price-desktop:selling-price']");
+	By mrp = By.xpath("//span[@data-test-id='pdp-price-desktop:mrp']");
 	By firstProduct =By.xpath("//a[@data-test-id='product-card-link' and contains(@aria-label,'Granola Bar Cashew Berry')]");
 	
 	

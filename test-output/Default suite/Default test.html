@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 08 07:26:11 IST 2026</td>
+<td>Started on:</td><td>Sat Jul 18 15:43:06 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51875 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13925 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,14 +76,96 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Nutrition products using Price and Brand filters", "Validating price and brand by filter functionality"</td>
-<td></td>
-<td>25</td>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products using category and rating", "Verify Nutrition filters"</td>
+<td><div><pre>java.lang.AssertionError: stale element reference: stale element not found
+  (Session info: chrome=150.0.7871.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, sendKeysToElement {value=[Ljava.lang.CharSequence;@200db4d0, id=f.6BC0D0AD34858BD2064B73D5C7CD5321.d.7DABD9CA80277E453E03C40437CB38A5.e.1869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //input[@type=&apos;search&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2056131170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2056131170'><pre>java.lang.AssertionError: stale element reference: stale element not found
+  (Session info: chrome=150.0.7871.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, sendKeysToElement {value=[Ljava.lang.CharSequence;@200db4d0, id=f.6BC0D0AD34858BD2064B73D5C7CD5321.d.7DABD9CA80277E453E03C40437CB38A5.e.1869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //input[@type=&apos;search&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div></td>
+<td>13</td>
 <td>cucumberOptions.TestRunner@57db2b13</td></tr>
 <tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Add to Cart functionality and pricing for a Nutrition product", "Validate Add to Cart functionality"</td>
-<td></td>
-<td>51</td>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products using category and rating", "Verify Nutrition filters"</td>
+<td><div><pre>java.lang.AssertionError: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, isElementDisplayed [id]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //div[@data-test-id=&apos;filter-sidebar-desktop:slider-thumb-max-outer&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2068759859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2068759859'><pre>java.lang.AssertionError: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, isElementDisplayed [id]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //div[@data-test-id=&apos;filter-sidebar-desktop:slider-thumb-max-outer&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div></td>
+<td>13</td>
+<td>cucumberOptions.TestRunner@57db2b13</td></tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify products using category and rating", "Verify Nutrition filters"</td>
+<td><div><pre>java.lang.AssertionError: stale element reference: stale element not found
+  (Session info: chrome=150.0.7871.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, sendKeysToElement {value=[Ljava.lang.CharSequence;@7334fe12, id=f.6BC0D0AD34858BD2064B73D5C7CD5321.d.7DABD9CA80277E453E03C40437CB38A5.e.1869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //input[@type=&apos;search&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace947020972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947020972'><pre>java.lang.AssertionError: stale element reference: stale element not found
+  (Session info: chrome=150.0.7871.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f375edc4c3101f1ce81a20b3d8ab8c8, sendKeysToElement {value=[Ljava.lang.CharSequence;@7334fe12, id=f.6BC0D0AD34858BD2064B73D5C7CD5321.d.7DABD9CA80277E453E03C40437CB38A5.e.1869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\VISHNU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52910}, goog:processID: 42420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52910/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3f375edc4c3101f1ce81a20b3d8ab8c8)] -&gt; xpath: //input[@type=&apos;search&apos;]]
+Session ID: 3f375edc4c3101f1ce81a20b3d8ab8c8
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.NutritionFilterStepDefinition.user_searches_nutrition_product(NutritionFilterStepDefinition.java:47)
+	at ✽.User searches Nutrition product &quot;Nutrition&quot;(file:///C:/Users/VISHNU%20VARDHAN/eclipse-workspace/decathlon-automation-framework/src/test/resources/features/NutritionCategoryRatingFilter.feature:5)
+</pre></div></td>
+<td>13</td>
 <td>cucumberOptions.TestRunner@57db2b13</td></tr>
 </table><p>
 </body>
