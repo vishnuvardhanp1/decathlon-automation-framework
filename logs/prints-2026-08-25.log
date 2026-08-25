@@ -1,0 +1,5 @@
+20:23:46.626 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Sub Total : ₹276
+20:23:46.661 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+20:23:46.691 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual UI Total : ₹396.00
+20:23:46.728 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276
+20:23:46.764 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396

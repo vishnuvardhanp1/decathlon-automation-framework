@@ -1,4 +1,5 @@
 pageObjects\AddToCartPage.class
+pageObjects\DiscountFilterPage.class
 pageObjects\PriceBrandFilterPage.class
 selenium\DecatalonSearchTest.class
 selenium\DecathlonSearchTest2.class

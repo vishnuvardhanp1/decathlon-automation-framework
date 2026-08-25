@@ -1,3 +1,4 @@
+stepDefinitions\DiscountFilterStepDefinition.class
 cucumberOptions\TestRunner.class
 hooks\SetupDriverHooks.class
 stepDefinitions\AddToCartStep.class
