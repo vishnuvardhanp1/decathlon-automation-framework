@@ -1,77 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="69.468" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="cucumberOptions.TestRunner" time="45.1" tests="3" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="21"/>
+    <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\test-classes;C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\classes;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;"/>
-    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="java.vm.specification.version" value="23"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
-    <property name="sun.boot.library.path" value="C:\Users\VISHNU VARDHAN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire9146329687405856198\surefirebooter-20260825202237427_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire9146329687405856198 2026-08-25T20-22-37_226-jvmRun1 surefire-20260825202237427_1tmp surefire_0-20260825202237427_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire5521860610954518325\surefirebooter-20261020173143717_3.jar C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire5521860610954518325 2026-10-20T17-31-43_589-jvmRun1 surefire-20261020173143717_1tmp surefire_0-20261020173143717_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\test-classes;C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework\target\classes;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.2\log4j-api-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.2\log4j-core-2.25.2.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.25.0\allure-cucumber7-jvm-2.25.0.jar;C:\Users\VISHNU VARDHAN\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\VISHNU VARDHAN"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2026-01-20"/>
-    <property name="java.home" value="C:\Users\VISHNU VARDHAN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire9146329687405856198\surefirebooter-20260825202237427_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VISHNU VARDHAN\AppData\Local\Temp\surefire5521860610954518325\surefirebooter-20261020173143717_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.10+7-LTS"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
     <property name="user.name" value="VISHNU VARDHAN"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="otel.metrics.exporter" value="none"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="otel.traces.exporter" value="none"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Temurin-21.0.10+7"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\VISHNU VARDHAN\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="otel.logs.exporter" value="none"/>
     <property name="java.io.tmpdir" value="C:\Users\VISHNU~1\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.10"/>
+    <property name="java.version" value="23.0.2"/>
     <property name="user.dir" value="C:\Users\VISHNU VARDHAN\eclipse-workspace\decathlon-automation-framework"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\VISHNU VARDHAN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/VISHNU VARDHAN/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin/server;C:/Users/VISHNU VARDHAN/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Python314;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Python314\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\cloudflared\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\VISHNU VARDHAN\scoop\shims;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHNU VARDHAN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-23\bin;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHNU VARDHAN\AppData\Roaming\npm;C:\Users\VISHNU VARDHAN\Downloads\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Ollama;C:\Users\VISHNU VARDHAN\Desktop;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Python314;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Python314\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\cloudflared\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\VISHNU VARDHAN\scoop\shims;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHNU VARDHAN\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-23\bin;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHNU VARDHAN\AppData\Roaming\npm;C:\Users\VISHNU VARDHAN\Downloads\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;;C:\Users\VISHNU VARDHAN\AppData\Local\Programs\Ollama;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
-    <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="java.vm.version" value="21.0.10+7-LTS"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="40.668">
+  <testcase name="runScenario[&quot;Validate Nutrition products using Price and Brand filters&quot;, &quot;Validating price and brand by filter functionality&quot;](1)" classname="cucumberOptions.TestRunner" time="24.368">
     <system-out><![CDATA[
+@AddToCart
+Scenario: Validate Add to Cart functionality and pricing for a Nutrition product                    &amp#27;[90m# src/test/resources/features/addtocart.feature:4&amp#27;[0m
+
 @DiscountFilter
 Scenario: Verify bags with 40% and above discount are displayed              &amp#27;[90m# src/test/resources/features/discountFilter.feature:4&amp#27;[0m
 
 @PriceBrandFilter
 Scenario: Validate Nutrition products using Price and Brand filters                &amp#27;[90m# src/test/resources/features/pricebrandFilter.feature:4&amp#27;[0m
-
-@AddToCart
-Scenario: Validate Add to Cart functionality and pricing for a Nutrition product                    &amp#27;[90m# src/test/resources/features/addtocart.feature:4&amp#27;[0m
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
 java -jar src/test/resources/selenium-server-4.44.0.jar standalone
@@ -79,60 +78,46 @@ GRID STARTED
 GRID STARTED
 GRID STARTED
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser launches the Decathlon application&amp#27;[0m                              &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_launches_the_decathlon_application()&amp#27;[0m
-20:23:00.705 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-20:23:00.849 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m&amp#27;[32m category&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.AddToCartStep.user_searches_for(java.lang.String)&amp#27;[0m
-20:23:00.864 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User applies the maximum price filter as 400
-20:23:01.447 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹2,399
-20:23:01.465 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 2399
-20:23:02.233 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹1,976
-20:23:02.235 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 1976
-20:23:02.823 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-20:23:02.850 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
+17:31:54.634 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+17:31:54.703 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m                                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_searches_for(java.lang.String)&amp#27;[0m
-20:23:02.855 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
-20:23:03.003 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,399
-20:23:03.004 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2399
-20:23:03.166 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹1,547
-20:23:03.167 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 1547
-20:23:03.500 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,976
-20:23:03.508 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1976
-20:23:03.812 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹1,128
-20:23:03.813 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 1128
-20:23:04.279 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,547
-20:23:04.281 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1547
-20:23:04.865 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹709
-20:23:04.871 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 709
-20:23:05.517 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹289
-20:23:05.520 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Current Price : 289
-20:23:05.648 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,128
-20:23:05.649 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1128
-20:23:06.262 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹709
-20:23:06.266 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 709
-20:23:06.949 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹289
-20:23:06.952 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 289
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"bags"&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_searches_for(java.lang.String)&amp#27;[0m
-20:23:10.551 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Search | Nutrition
-20:23:10.564 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-289
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser selects the maximum price filter less than &amp#27;[0m&amp#27;[32m&amp#27;[1m"400"&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.AddToCartStep.user_selects_the_maximum_price_filter_less_than(java.lang.String)&amp#27;[0m
-20:23:10.566 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User selects the productGranola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-20:23:10.620 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - productName Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
-20:23:10.620 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - sellingPrice 0
-20:23:10.621 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - mrp 0
+17:31:54.705 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - User applies the maximum price filter as {string}
+17:31:54.805 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹3,499
+17:31:54.826 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 3499
+17:31:54.970 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Title : Buy Sporting Goods, Sportswear and Equipments | Download App
+17:31:55.004 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - URL : https://www.decathlon.in/
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser searches for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Nutrition"&amp#27;[0m&amp#27;[32m category&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.AddToCartStep.user_searches_for(java.lang.String)&amp#27;[0m
+17:31:55.007 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User selects the productGranola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
+17:31:55.289 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,878
+17:31:55.291 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2878
+17:31:55.481 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - productName Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar
+17:31:55.482 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - sellingPrice 0
+17:31:55.483 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - mrp 0
+17:31:55.729 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹2,261
+17:31:55.732 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 2261
+17:31:56.190 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,630
+17:31:56.190 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1630
+17:31:56.665 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹1,014
+17:31:56.665 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 1014
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks the product &amp#27;[0m&amp#27;[32m&amp#27;[1m"Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar"&amp#27;[0m &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_the_product(java.lang.String)&amp#27;[0m
-20:23:11.624 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
-20:23:11.996 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
-20:23:12.040 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-289
+17:31:56.865 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - User adds the product to the cart
+17:31:57.142 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - ₹398
+17:31:57.142 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Current Price : 398
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Add to Cart button&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
+17:31:57.862 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"bags"&amp#27;[0m                                                &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_searches_for(java.lang.String)&amp#27;[0m
+17:32:02.167 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - Title : Search | Nutrition
+17:32:02.174 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - URL : https://www.decathlon.in/search?query=Nutrition&inStock=1&price=59-398
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser applies the maximum price filter as &amp#27;[0m&amp#27;[32m&amp#27;[1m"400"&amp#27;[0m                               &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_applies_the_maximum_price_filter_as(java.lang.String)&amp#27;[0m
 User verifies all displayed products have price less than or equal to {string}
-400 : 69
-Price : ₹69
-400 : 69
-Price : ₹69
+400 : 329
+Price : ₹329
+400 : 299
+Price : ₹299
 400 : 219
 Price : ₹219
-400 : 69
-Price : ₹69
+400 : 349
+Price : ₹349
 400 : 129
 Price : ₹129
 400 : 129
@@ -157,59 +142,57 @@ Price : ₹69
 Price : ₹69
 400 : 69
 Price : ₹69
-400 : 59
-Price : ₹59
 400 : 69
 Price : ₹69
-400 : 59
-Price : ₹59
 400 : 89
 Price : ₹89
+400 : 69
+Price : ₹69
+400 : 59
+Price : ₹59
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products have price less than or equal to &amp#27;[0m&amp#27;[32m&amp#27;[1m"400"&amp#27;[0m &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_have_price_less_than_or_equal_to(java.lang.String)&amp#27;[0m
-20:23:12.721 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Add to Cart button&amp#27;[0m                                                                &amp#27;[90m# stepDefinitions.AddToCartStep.user_clicks_add_to_cart_button()&amp#27;[0m
-20:23:12.979 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+17:32:02.438 [TestNG-PoolService-2] INFO  stepDefinitions.PriceBrandFilterStep - User selects the brand {string}
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser opens the Discount filter&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_opens_the_discount_filter()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser selects the brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m                                          &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_selects_the_brand(java.lang.String)&amp#27;[0m
 User verifies all displayed products belong to brand {string}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser selects the &amp#27;[0m&amp#27;[32m&amp#27;[1m"40% and above"&amp#27;[0m&amp#27;[32m discount filter&amp#27;[0m                      &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_selects_the_discount_filter(java.lang.String)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser verifies all displayed products belong to brand &amp#27;[0m&amp#27;[32m&amp#27;[1m"Decathlon"&amp#27;[0m            &amp#27;[90m# stepDefinitions.PriceBrandFilterStep.user_verifies_all_displayed_products_belong_to_brand(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser selects the &amp#27;[0m&amp#27;[32m&amp#27;[1m"40% and above"&amp#27;[0m&amp#27;[32m discount filter&amp#27;[0m                      &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.user_selects_the_discount_filter(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Aug 25, 2026 8:22:39 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+Oct 20, 2026 5:31:44 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
 INFO: Using OpenTelemetry for tracing
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify bags with 40% and above discount are displayed&quot;, &quot;Bags discount filter&quot;](2)" classname="cucumberOptions.TestRunner" time="45.529">
+  <testcase name="runScenario[&quot;Verify bags with 40% and above discount are displayed&quot;, &quot;Bags discount filter&quot;](2)" classname="cucumberOptions.TestRunner" time="30.029">
     <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAll applicable discount options from 40% and above should be selected&amp#27;[0m &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.all_applicable_discount_options_from_40_percent_and_above_should_be_selected()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mEvery displayed bag should have a discount of 40% or above&amp#27;[0m            &amp#27;[90m# stepDefinitions.DiscountFilterStepDefinition.every_displayed_bag_should_have_a_discount_of_40_percent_and_above()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate Add to Cart functionality and pricing for a Nutrition product&quot;, &quot;Validate Add to Cart functionality&quot;](3)" classname="cucumberOptions.TestRunner" time="68.217">
+  <testcase name="runScenario[&quot;Validate Add to Cart functionality and pricing for a Nutrition product&quot;, &quot;Validate Add to Cart functionality&quot;](3)" classname="cucumberOptions.TestRunner" time="44.377">
     <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser navigates to the cart&amp#27;[0m                                                                    &amp#27;[90m# stepDefinitions.AddToCartStep.user_navigates_to_the_cart()&amp#27;[0m
-20:23:35.850 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+17:32:18.282 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser increases the quantity to &amp#27;[0m&amp#27;[32m&amp#27;[1m"3"&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.AddToCartStep.user_increases_the_quantity_to(java.lang.String)&amp#27;[0m
-20:23:41.287 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-20:23:41.344 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
-20:23:41.345 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
+17:32:23.537 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+17:32:23.571 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Cart Count : 4
+17:32:23.571 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Cart Count : 4
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe cart should display correct quantity&amp#27;[0m                                                     &amp#27;[90m# stepDefinitions.AddToCartStep.the_cart_should_display_correct_quantity()&amp#27;[0m
-20:23:46.362 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
-20:23:46.363 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
-20:23:46.363 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
-20:23:46.368 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
-20:23:46.404 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹396.00
-20:23:46.522 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Product Price : ₹276
-20:23:46.559 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Discount : -₹120
-20:23:46.590 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Total Price : ₹396.00
-20:23:46.626 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Sub Total : ₹276
-20:23:46.661 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
-20:23:46.691 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual UI Total : ₹396.00
-20:23:46.728 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276
-20:23:46.764 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396
-20:23:46.796 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Discount : 120
-20:23:46.800 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalprice: 396
+17:32:28.575 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Validate correct item is added
+17:32:28.580 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Selling Price : 276
+17:32:28.580 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+17:32:28.580 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Discount : 120
+17:32:28.597 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹396.00
+17:32:28.617 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Product Price : ₹276
+17:32:28.632 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Discount : -₹120
+17:32:28.647 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Total Price : ₹396.00
+17:32:28.663 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Sub Total : ₹276
+17:32:28.678 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
+17:32:28.693 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual UI Total : ₹396.00
+17:32:28.710 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Selling Price : 276
+17:32:28.726 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Total Price : 396
+17:32:28.741 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Actual Discount : 120
+17:32:28.742 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - totalprice: 396
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe cart should display the correct selling price, MRP, discount and total price&amp#27;[0m              &amp#27;[90m# stepDefinitions.AddToCartStep.validate_selling_price_discount_mrp()&amp#27;[0m
 ]]></system-out>
   </testcase>

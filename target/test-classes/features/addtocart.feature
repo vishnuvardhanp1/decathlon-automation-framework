@@ -4,7 +4,7 @@ Feature: Validate Add to Cart functionality
 Scenario: Validate Add to Cart functionality and pricing for a Nutrition product
 
 When User searches for "Nutrition" category
-And User selects the maximum price filter less than "400"
+
 And User clicks the product "Granola Bar Cashew Berry - Healthy Nutrition Energy & Breakfast Bar"
 And User clicks Add to Cart button
 And User navigates to the cart

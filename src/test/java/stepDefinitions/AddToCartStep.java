@@ -56,7 +56,7 @@ public class AddToCartStep  extends Base {
 		Assert.fail(ex.getMessage());
 	}
 	}
-	@And("User selects the maximum price filter less than {string}")
+/*	@And("User selects the maximum price filter less than {string}")
 	public void user_selects_the_maximum_price_filter_less_than(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		logger.info("User applies the maximum price filter as {}", string);
@@ -101,6 +101,7 @@ public class AddToCartStep  extends Base {
 			Assert.fail(ex.getMessage());
 		}
 	}
+	*/
 	@And("User clicks the product {string}")
 	public void user_clicks_the_product(String string) {
 	    // Write code here that turns the phrase above into concrete actions

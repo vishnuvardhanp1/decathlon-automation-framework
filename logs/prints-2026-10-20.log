@@ -1,0 +1,6 @@
+17:32:28.597 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - ₹396.00
+17:32:28.617 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Product Price : ₹276
+17:32:28.632 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Discount : -₹120
+17:32:28.647 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Total Price : ₹396.00
+17:32:28.663 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Sub Total : ₹276
+17:32:28.678 [TestNG-PoolService-0] INFO  stepDefinitions.AddToCartStep - Expected Total Price : 396
